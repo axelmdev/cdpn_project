@@ -5,6 +5,8 @@ public class Case {
     private boolean isUsable;
     private Character character;
     private String imagePath;
+    private int x;
+    private int y;
 
     public int getId() {
         return id;
@@ -36,5 +38,33 @@ public class Case {
 
     public void setImagePath(String imagePath) {
         this.imagePath = imagePath;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public Case(int id, boolean isUsable, Character character, String imagePath, int x, int y) {
+        this.id = id;
+        this.isUsable = isUsable;
+        this.character = character;
+        this.imagePath = imagePath;
+        this.x = x;
+        this.y = y;
+    }
+
+    public Case() {
     }
 }

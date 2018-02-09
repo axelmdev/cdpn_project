@@ -2,7 +2,7 @@ package efan.fightforgrades.Model;
 
 import java.util.List;
 
-public class ActiveCharacter {
+public class ActiveCharacter extends Character {
     private int level;
     private int life;
     private int baseLife;
